@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './components/header/Header'
+import Blog from './components/body/Blog'
+import Post from './components/body/Post'
+
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Header/>    
+    <Switch>
+      <Route path="/" exact component={Blog}/>
+      <Route path="/post/:id" component={Post}/>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

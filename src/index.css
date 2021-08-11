@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav_bar {
+  background: black;
+  padding: 10px;
+}
+
+.nav_link {
+  background: darkgray;
+  padding: 2px;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_active_link {
+  background: rgb(85, 85, 85);
+}
+.loaded_posts {
+  display: flex;
+}
+
+.posts {
+  border: 1px solid black;
+  flex: 1;
+  max-width: 400px;
+  height: 700px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.posts img {
+  width: 100%;
+  height: 600px;
+  
+}
+
+.current_post img {
+  height: 400px;
+}
+.current_post  {
+  padding-left: 10px;
+}
